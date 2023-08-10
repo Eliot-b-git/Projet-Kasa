@@ -4,11 +4,13 @@ $border-radius: 20px;
 
 .BannerImage {
   border-radius: $border-radius;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 223px;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 20px;
+  width: 90%;   
+  max-width: 1440px;    
+  margin-top: 30px;
   object-fit: cover;
 }
 

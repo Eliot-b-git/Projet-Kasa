@@ -7,10 +7,11 @@
     gap: 0px;    
     width: 90%;
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F6F6F6;         
-    border-radius: 25px;                // Espacement entre les éléments
+    border-radius: 25px;    
+    max-width: 1440px;            // Espacement entre les éléments
 
   
     .logement-card {
@@ -20,9 +21,12 @@
       text-align: center;
       border: none;
       
+      
   
       img {
-        max-width: 100%; // L'image ne dépassera pas la largeur de la logement-card
+        max-width: 100%;
+        border-radius: 10px; 
+        // L'image ne dépassera pas la largeur de la logement-card
       }
     }
 
