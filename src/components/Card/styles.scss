@@ -7,10 +7,10 @@
     gap: 0px;    
     width: 90%;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #F6F6F6;         
-    border-radius: 25px;    
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;    
     max-width: 1440px;            // Espacement entre les éléments
 
   
@@ -38,7 +38,8 @@
         bottom: 15px;
         color: white;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 25px;
+        margin-left: 5px;
         
       }
   }

@@ -1,0 +1,65 @@
+// MenuDeroulant.scss
+
+.menu-deroulant-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    .titre {
+      display: flex; 
+      align-items: center; // Alignement vertical centré
+      background-color: #FF6060; // Fond rouge pour le titre
+      color: white; // Texte en blanc
+      padding: 5px; // Espacement autour du titre
+      border-radius: 4px; // Coins arrondis
+      margin: 0px 0 0 0; // Espacement entre les titres
+    }
+    .titre-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        color: white;
+        padding: 5px;
+        border-radius: 4px;
+        margin: 40px 0 0 0;
+      }
+
+
+      .fleche {
+        width: 24px; // Ajustez la largeur selon vos besoins
+        height: 13px;
+        object-fit: cover; // Ajustez la hauteur selon vos besoins
+        transition: transform 0.3s ease; // Transition pour l'animation de rotation
+        margin:0 5px 0 0;
+        
+      }
+      
+    .flecheouvert {
+        transform: rotate(180deg); // Rotation de la flèche ouverte
+        object-fit: cover;
+        width: 24px;
+        height: 13px;
+        margin-right: 5px;
+    }
+  
+    .contenu {
+      display: none;
+  
+      &.ouvert {
+        display: block;
+      }
+  
+    }
+    .contenuouvert{
+        background-color: #F6F6F6; // Fond gris pour le texte
+        color: #FF6060; // Texte en rouge
+        padding: 10px; // Espacement autour du texte
+        border-radius: 5px; // Coins arrondis
+        margin-top: 0px; // Espacement entre les textes
+    }
+  }
+  
