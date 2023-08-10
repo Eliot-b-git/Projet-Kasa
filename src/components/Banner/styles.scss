@@ -1,0 +1,14 @@
+
+// Fichier BannerImage.scss
+$border-radius: 20px;
+
+.BannerImage {
+  border-radius: $border-radius;
+  height: 223px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+

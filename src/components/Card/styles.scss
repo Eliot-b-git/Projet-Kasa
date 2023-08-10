@@ -1,0 +1,40 @@
+// LogementsPage.scss
+
+.logements-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes égales
+    grid-template-rows: repeat(2, auto);   // 2 lignes automatiques
+    gap: 0px;    
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F6F6F6;         
+    border-radius: 25px;                // Espacement entre les éléments
+
+  
+    .logement-card {
+      position: relative;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      border: none;
+      
+  
+      img {
+        max-width: 100%; // L'image ne dépassera pas la largeur de la logement-card
+      }
+    }
+
+    .logement-description {
+        max-height: 1em; // Limite la hauteur à 1 lignes de texte environ
+        overflow: hidden;
+        text-align: center;
+        position: absolute;
+        bottom: 15px;
+        color: white;
+        max-width: 80%;
+        font-size: 18px;
+        
+      }
+  }

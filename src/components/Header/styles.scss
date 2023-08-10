@@ -1,0 +1,31 @@
+// NavHeader.scss
+.NavHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+// DivHeader.scss
+.DivHeader {
+  
+  display: flex;
+}
+
+// StyledLink.scss
+.StyledLink {
+  padding-left: 5px;
+  font-size: 24px;
+  padding-left: 20px;
+  margin-top: 20px;
+  color: #ff6060;
+}
+
+// HeaderImage.scss
+.HeaderImage {
+  height: 68px;
+  width: 210px;
+  object-fit: cover;
+}
