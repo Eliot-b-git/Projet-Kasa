@@ -1,9 +1,13 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import './GlobalStyle.scss'
+
+
+
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
   }
 `;
