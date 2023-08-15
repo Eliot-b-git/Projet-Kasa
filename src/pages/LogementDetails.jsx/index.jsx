@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import jsonData from '../../components/data.json';
 import MenuDeroulant from '../../components/MenuDeroulant';
 import style from './styles.scss'
@@ -13,7 +13,7 @@ const LogementDetails = () => {
   const logement = jsonData.find(item => item.id === logementId); // Trouver le logement correspondant dans les données
 
   if (!logement) {
-    return <div>Logement non trouvé.</div>;
+    return <Navigate to="/error" />;
   }
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
