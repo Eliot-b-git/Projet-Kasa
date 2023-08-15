@@ -16,13 +16,17 @@
   display: flex;
 }
 
-// StyledLink.scss
 .StyledLink {
-  padding-left: 5px;
   font-size: 24px;
   padding-left: 35px;
   margin-top: 20px;
   color: #ff6060;
+  border: none;
+  text-decoration: none;
+}
+
+.StyledLink:hover {
+  text-decoration: underline;
 }
 
 // HeaderImage.scss

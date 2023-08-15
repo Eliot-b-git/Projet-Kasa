@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     margin: 0;
   }
+  head {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
 `;
 
 export default GlobalStyle;
