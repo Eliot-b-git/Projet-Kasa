@@ -5,7 +5,7 @@ import './styles.scss';
 
 function Home() {
   return (
-    <div>
+    <div className='bannierelogement'>
       <p className='TexteBanniere'>Chez vous, partout et ailleurs</p>,
       <Banniere type="accueil" />
       <LogementsPage />

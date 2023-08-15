@@ -31,3 +31,25 @@
   width: 210px;
   object-fit: cover;
 }
+
+
+// Media Query pour les écrans de petite taille (max-width: 767px)
+@media (max-width: 767px) {
+  // Ajustez vos styles pour les écrans de petite taille ici
+  .NavHeader { 
+    max-width: 766px;    
+  }
+  .StyledLink {    
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 30px;
+  }
+  .HeaderImage {
+    height: 34px;
+    width: 105px;
+    object-fit: cover;
+  }
+  .DivHeader {
+    text-align: center;
+  }
+}
