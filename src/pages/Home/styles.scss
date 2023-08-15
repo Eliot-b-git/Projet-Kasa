@@ -7,3 +7,16 @@
     font-weight: 500;
     margin-top: 130px;
 }
+
+// Media Query pour les écrans de petite taille (max-width: 767px)
+@media (max-width: 767px) {
+    .TexteBanniere{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 60px;
+    }
+  }

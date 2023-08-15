@@ -14,3 +14,19 @@ $border-radius: 20px;
   object-fit: cover;
 }
 
+// Media Query pour les écrans de petite taille (max-width: 767px)
+@media (max-width: 767px) {
+  // Ajustez vos styles pour les écrans de petite taille ici
+  .BannerImage {
+    border-radius: $border-radius;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+    width: 90%;   
+    max-width: 767px;    
+    margin-top: 0px;
+    object-fit: cover;
+  }
+
+}
