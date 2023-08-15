@@ -5,9 +5,7 @@ import FiabiliteTexte from './fiabiliteTexte'; // Importez les composants texte
 import RespectTexte from './respectTexte';
 import SecuriteTexte from './securiteTexte';
 import ServiceTexte from './serviceTexte';
-// import style from './styles.scss'
-// <div className='divMenu'>
-
+import './styles.scss';
 
 function About() {
   return (

@@ -2,7 +2,7 @@
 
 $border-radius: 20px;
 
-.BannerImage {
+.BannerImage1, .BannerImage2 {
   border-radius: $border-radius;
   display: block;
   margin-left: auto;
@@ -17,13 +17,24 @@ $border-radius: 20px;
 // Media Query pour les écrans de petite taille (max-width: 767px)
 @media (max-width: 767px) {
   // Ajustez vos styles pour les écrans de petite taille ici
-  .BannerImage {
+  .BannerImage1 {
     border-radius: $border-radius;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 110px;
     width: 90%;   
+    max-width: 767px;    
+    margin-top: 0px;
+    object-fit: cover;
+  }
+  .BannerImage2 {
+    border-radius: $border-radius;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 336px;
+    width: 100%;   
     max-width: 767px;    
     margin-top: 0px;
     object-fit: cover;
