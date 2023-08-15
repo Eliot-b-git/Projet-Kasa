@@ -4,7 +4,7 @@ import jsonData from '../data.json';
 import style from './styles.scss'
 
 const LogementsPage = () => {
-  const firstSixLogements = jsonData.slice(0, 6);
+  const firstSixLogements = jsonData.slice(0, 32);
 
   return (
     <div className="logements-container">
