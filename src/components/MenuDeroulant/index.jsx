@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.scss';
 import flecheImage from '../../assets/Fleche.png'
+import Collapse from '../Collapse/Collapse';
 
 const MenuDeroulant = ({ titre, texte }) => {
   const [ouvert, setOuvert] = useState(false);
