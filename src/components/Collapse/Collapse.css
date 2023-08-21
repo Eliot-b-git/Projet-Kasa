@@ -102,7 +102,7 @@
 
     .collapse__wrapper--medium .collapse__title,
     .collapse__wrapper--large .collapse__title {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .collapse__wrapper--medium .collapse__textWrapper {
@@ -113,7 +113,7 @@
 
     .collapse__wrapper--medium .collapse__text,
     .collapse__wrapper--large .collapse__text {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .collapse__wrapper--large .collapse__textWrapper {
