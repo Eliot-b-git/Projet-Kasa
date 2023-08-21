@@ -7,6 +7,7 @@ import FlecheDroite from '../../assets/FlecheDroite.png'
 import FlecheGauche from '../../assets/FlecheGauche.png'
 import etoileblanche from '../../assets/etoileblanche.png'
 import etoilerouge from '../../assets/etoilerouge.png'
+import Collapse from '../../components/Collapse/Collapse';
 
 const LogementDetails = () => {
   const { logementId } = useParams(); // Récupérer l'ID du logement depuis les paramètres d'URL
@@ -83,9 +84,9 @@ const LogementDetails = () => {
       
         </div>
         <div className='menuderoulant'>
-          <MenuDeroulant titre="Description" texte={logement.description} />  
+          <Collapse title="Description" content={logement.description} />  
           <p className="espacerlemenu"></p>          
-          <MenuDeroulant titre="Equipements" texte={logement.equipments.map(equipment => <p key={equipment}>{equipment}</p>)} />                    
+          <Collapse title="Equipements" content={logement.equipments.map(equipment => <p key={equipment}>{equipment}</p>)} />                    
         </div>
          
       </div>

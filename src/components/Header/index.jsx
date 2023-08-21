@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './styles.scss'; // Import du fichier SASS
+import { NavLink } from 'react-router-dom';
+import './styles.scss';
 import logorouge from '../../assets/logorouge.png';
 
 const Header = () => {
@@ -7,8 +7,8 @@ const Header = () => {
     <nav className="NavHeader">
       <img src={logorouge} alt="logorouge" className="HeaderImage" />
       <div className="DivHeader">
-        <Link to="/" className="StyledLink">Accueil</Link>
-        <Link to="/About" className="StyledLink">A propos</Link>
+        <NavLink exact to="/" className="StyledLink" activeClassName="ActiveLink">Accueil</NavLink>
+        <NavLink to="/about" className="StyledLink" activeClassName="ActiveLink">A propos</NavLink>
       </div>
     </nav>
   );
