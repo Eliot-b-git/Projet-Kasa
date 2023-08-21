@@ -1,6 +1,5 @@
 import React from 'react';
 import Banniere from '../../components/Banner';
-import MenuDeroulant from '../../components/MenuDeroulant';
 import FiabiliteTexte from './fiabiliteTexte'; // Importez les composants texte
 import RespectTexte from './respectTexte';
 import SecuriteTexte from './securiteTexte';
@@ -13,9 +12,9 @@ function About() {
     <div className="divMenu">
       <Banniere type="about" />
       <Collapse title="Fiabilité" content={<FiabiliteTexte />} />
-      <Collapse title="Respect" content={<FiabiliteTexte />} />
-      <Collapse title="Service" content={<FiabiliteTexte />} />
-      <Collapse title="Sécurité" content={<FiabiliteTexte />} />
+      <Collapse title="Respect" content={<RespectTexte />} />
+      <Collapse title="Service" content={<SecuriteTexte />} />
+      <Collapse title="Sécurité" content={<ServiceTexte />} />
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import jsonData from '../../components/data.json';
-import MenuDeroulant from '../../components/MenuDeroulant';
-import style from './styles.scss'
+import './styles.scss'
 import FlecheDroite from '../../assets/FlecheDroite.png'
 import FlecheGauche from '../../assets/FlecheGauche.png'
 import etoileblanche from '../../assets/etoileblanche.png'
