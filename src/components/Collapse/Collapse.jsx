@@ -63,16 +63,19 @@ const Collapse = (props) => {
                     className={`collapse__arrow ${isOpen ? "rotate" : "anti-rotate"}`}
                     width="25"
                     height="15"
-                    viewBox="0 0 25 15"
+                    viewBox="0 0 25 15" // la taille de boite englobante la fléche 
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                 >
+                    {/*  le chemin que la flèche va suivre pour être dessinée */}
                     <path
                         d="M21.7269 14.1403L23.8599 11.9951L11.93 0.0764155L7.19578e-05 12.0072L2.13299 14.1403L11.93 4.34257L21.7269 14.1403Z"
                         fill="white"
                     />
                 </svg>
             </div>
+
+
             {/* Conteneur du contenu qui peut être réduit ou étendu */}
             <div className="content-parent" ref={contentRef} style={isOpen ? { height: contentRef.current.scrollHeight + "px" } : { height: "0px" }}>
                 <div className={"collapse__textWrapper"}>
@@ -80,6 +83,8 @@ const Collapse = (props) => {
                     <div className="collapse__text">{props.content}</div>
                 </div>
             </div>
+
+            
         </article>
     );
 }

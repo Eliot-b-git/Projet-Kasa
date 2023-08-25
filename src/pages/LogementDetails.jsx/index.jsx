@@ -12,18 +12,31 @@ const LogementDetails = () => {
   const { logementId } = useParams(); // Récupérer l'ID du logement depuis les paramètres d'URL
   const logement = jsonData.find(item => item.id === logementId); // Trouver le logement correspondant dans les données
 
+  // État pour suivre l'index de l'image actuellement affichée
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
   if (!logement) {
     return <Navigate to="/error" />;
   }
   
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+
+  // Fonction pour afficher l'image précédente
   const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? logement.pictures.length - 1 : prevIndex - 1));
+      // Mise à jour de l'index de l'image actuelle
+      setCurrentImageIndex((prevIndex) => 
+          // Si l'index actuel est 0, passer à la dernière image, sinon diminuer l'index de 1
+          prevIndex === 0 ? logement.pictures.length - 1 : prevIndex - 1
+      );
   };
 
+  // Fonction pour afficher l'image suivante
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === logement.pictures.length - 1 ? 0 : prevIndex + 1));
+      // Mise à jour de l'index de l'image actuelle
+      setCurrentImageIndex((prevIndex) =>
+          // Si l'index actuel est le dernier index, passer à la première image, sinon augmenter l'index de 1
+          prevIndex === logement.pictures.length - 1 ? 0 : prevIndex + 1
+      );
   };
 
 
@@ -35,6 +48,7 @@ const LogementDetails = () => {
     
     for (let i = 1; i <= 5; i++) {
       if (i <= parseInt(rating)) {
+        // Si l'index actuel est inférieur ou égal à la note, ajouter une étoile pleine, sinon une étoile vide
         stars.push(filledStar);
       } else {
         stars.push(emptyStar);

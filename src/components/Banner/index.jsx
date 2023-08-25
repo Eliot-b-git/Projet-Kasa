@@ -10,7 +10,7 @@ const Banniere = ({ type }) => {
   } else if (type === 'about') {
     return <img className="BannerImage2" src={MontagneBanner} alt='MontagneBanner' />;
   } else {
-    return null; // Gérer les autres cas si nécessaire
+    return null; 
   }
 };
 
