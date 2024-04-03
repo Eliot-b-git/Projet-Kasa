@@ -7,6 +7,7 @@ const Collapse = (props) => {
     const contentRef = useRef(null);
 
     // État pour stocker la hauteur maximale du contenu
+    // eslint-disable-next-line
     const [maxHeight, setMaxHeight] = useState(null);
 
     // État pour gérer l'état d'ouverture ou de fermeture du collapse
@@ -26,6 +27,7 @@ const Collapse = (props) => {
                     const computedHeight = height + heightDeltas.reduce((acc, value) => acc + value, 0);
                     return computedHeight;
                 };
+                // eslint-disable-next-line
                 setMaxHeight(computeHeight());
             } else {
                 setMaxHeight(null);
